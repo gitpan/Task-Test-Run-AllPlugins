@@ -1,18 +1,33 @@
---- #YAML:1.0
-name:                Task-Test-Run-AllPlugins
-version:             0.0100
-abstract:            Specifications for installing all the Test::Run
-license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.31
-distribution_type:   module
-requires:     
-    Test::Run::CmdLine:            0
-    Test::Run::CmdLine::Plugin::AlternateInterpreters: 0
-    Test::Run::CmdLine::Plugin::ColorFileVerdicts: 0
-    Test::Run::CmdLine::Plugin::ColorSummary: 0
-    Test::Run::Core:               0
-meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
+---
+abstract: 'Specifications for installing all the Test::Run'
 author:
-    - Shlomi Fish <shlomif@iglu.org.il>
+  - 'Shlomi Fish <shlomif@iglu.org.il>'
+build_requires:
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Task-Test-Run-AllPlugins
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Test::Run::CmdLine: 0
+  Test::Run::CmdLine::Plugin::AlternateInterpreters: 0
+  Test::Run::CmdLine::Plugin::BreakOnFailure: 0
+  Test::Run::CmdLine::Plugin::ColorFileVerdicts: 0
+  Test::Run::CmdLine::Plugin::ColorSummary: 0
+  Test::Run::CmdLine::Plugin::TrimDisplayedFilenames: 0
+  Test::Run::Core: 0
+  Test::Run::Plugin::AlternateInterpreters: 0
+  Test::Run::Plugin::BreakOnFailure: 0
+  Test::Run::Plugin::ColorFileVerdicts: 0
+  Test::Run::Plugin::ColorSummary: 0
+  Test::Run::Plugin::TrimDisplayedFilenames: 0
+version: 0.0101
